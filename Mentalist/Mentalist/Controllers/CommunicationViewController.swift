@@ -24,13 +24,8 @@ class CommunicationViewController: UIViewController, UICollectionViewDataSource,
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        let paddingView: UIEdgeInsets = UIEdgeInsets(top: 0, left: 15, bottom: 0, right: 5)
-//        myResponse.leftView = paddingView
-//        myResponse.leftViewMode = .always
-        
         myResponse.delegate = self
 
-        // Do any additional setup after loading the view.
         hideKeyboardWhenTappedAround()
         myCollection.delegate = self
         myCollection.dataSource = self
