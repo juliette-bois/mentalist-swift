@@ -199,7 +199,7 @@
                         <viewLayoutGuide key="safeArea" id="jmr-ZA-cvR"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Map" image="mappin" catalog="system" id="fXu-g6-QzV"/>
+                    <tabBarItem key="tabBarItem" title="Map" image="pin" id="fXu-g6-QzV"/>
                     <connections>
                         <outlet property="myCollection" destination="uSP-Wb-Ic0" id="uPG-zT-VIe"/>
                         <outlet property="myMap" destination="GHv-Uu-1f2" id="rxk-2v-RUk"/>
@@ -292,7 +292,7 @@
     </designables>
     <resources>
         <image name="folder" catalog="system" width="128" height="97"/>
-        <image name="mappin" catalog="system" width="105" height="128"/>
+        <image name="pin" width="24" height="24"/>
         <image name="square.and.pencil" catalog="system" width="128" height="115"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
