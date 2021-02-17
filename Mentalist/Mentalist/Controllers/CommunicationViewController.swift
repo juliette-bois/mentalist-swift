@@ -8,7 +8,7 @@
 import UIKit
 import StringMetric
 
-class CommunicationViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+class CommunicationViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout, UITextFieldDelegate {
 
     @IBOutlet weak var myCollection: UICollectionView!
     @IBOutlet weak var myResponse: UITextField!
@@ -23,6 +23,12 @@ class CommunicationViewController: UIViewController, UICollectionViewDataSource,
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+//        let paddingView: UIEdgeInsets = UIEdgeInsets(top: 0, left: 15, bottom: 0, right: 5)
+//        myResponse.leftView = paddingView
+//        myResponse.leftViewMode = .always
+        
+        myResponse.delegate = self
 
         // Do any additional setup after loading the view.
         hideKeyboardWhenTappedAround()
@@ -103,6 +109,11 @@ class CommunicationViewController: UIViewController, UICollectionViewDataSource,
     
     @objc func dismissKeyboard() {
         view.endEditing(true)
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return false
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {

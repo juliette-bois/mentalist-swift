@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		21C370FE25DDA2290061A853 /* TextFieldClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C370FD25DDA2290061A853 /* TextFieldClass.swift */; };
+		21C3710625DDA2830061A853 /* ButtonHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C3710525DDA2830061A853 /* ButtonHelper.swift */; };
 		21C5C9EC25DBB0490024B764 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C5C9EB25DBB0490024B764 /* AppDelegate.swift */; };
 		21C5C9EE25DBB0490024B764 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C5C9ED25DBB0490024B764 /* SceneDelegate.swift */; };
 		21C5C9F025DBB0490024B764 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C5C9EF25DBB0490024B764 /* ViewController.swift */; };
@@ -42,6 +44,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		21C370FD25DDA2290061A853 /* TextFieldClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldClass.swift; sourceTree = "<group>"; };
+		21C3710525DDA2830061A853 /* ButtonHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonHelper.swift; sourceTree = "<group>"; };
 		21C5C9E825DBB0490024B764 /* Mentalist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mentalist.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		21C5C9EB25DBB0490024B764 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		21C5C9ED25DBB0490024B764 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -90,6 +94,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		21C370FC25DDA20B0061A853 /* UIHelpers */ = {
+			isa = PBXGroup;
+			children = (
+				21C370FD25DDA2290061A853 /* TextFieldClass.swift */,
+				21C3710525DDA2830061A853 /* ButtonHelper.swift */,
+			);
+			path = UIHelpers;
+			sourceTree = "<group>";
+		};
+		21C3710A25DDA2CA0061A853 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				21C5CA1E25DBB0CE0024B764 /* CommunicationViewController.swift */,
+				21C5C9EF25DBB0490024B764 /* ViewController.swift */,
+				21C5CA2325DBB0D80024B764 /* MapViewController.swift */,
+				21C5CA2825DBB0E00024B764 /* HistoryViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		21C3710B25DDA2E90061A853 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				21C5C9F125DBB0490024B764 /* Main.storyboard */,
+				21C5C9F625DBB04A0024B764 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		21C3710C25DDA3030061A853 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				21C5CA3025DBB4EB0024B764 /* BLEManager.swift */,
+				21DF667025DBEC6E009B58D6 /* HistoryHelper.swift */,
+				21DF667525DBF0C2009B58D6 /* LocationManager.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		21C5C9DF25DBB0490024B764 = {
 			isa = PBXGroup;
 			children = (
@@ -113,19 +156,14 @@
 		21C5C9EA25DBB0490024B764 /* Mentalist */ = {
 			isa = PBXGroup;
 			children = (
+				21C3710C25DDA3030061A853 /* Helpers */,
+				21C3710B25DDA2E90061A853 /* Views */,
+				21C3710A25DDA2CA0061A853 /* Controllers */,
+				21C370FC25DDA20B0061A853 /* UIHelpers */,
 				21C5C9EB25DBB0490024B764 /* AppDelegate.swift */,
 				21C5C9ED25DBB0490024B764 /* SceneDelegate.swift */,
-				21C5C9EF25DBB0490024B764 /* ViewController.swift */,
-				21C5C9F125DBB0490024B764 /* Main.storyboard */,
 				21C5C9F425DBB04A0024B764 /* Assets.xcassets */,
-				21C5C9F625DBB04A0024B764 /* LaunchScreen.storyboard */,
 				21C5C9F925DBB04A0024B764 /* Info.plist */,
-				21C5CA1E25DBB0CE0024B764 /* CommunicationViewController.swift */,
-				21C5CA2325DBB0D80024B764 /* MapViewController.swift */,
-				21C5CA2825DBB0E00024B764 /* HistoryViewController.swift */,
-				21C5CA3025DBB4EB0024B764 /* BLEManager.swift */,
-				21DF667025DBEC6E009B58D6 /* HistoryHelper.swift */,
-				21DF667525DBF0C2009B58D6 /* LocationManager.swift */,
 			);
 			path = Mentalist;
 			sourceTree = "<group>";
@@ -284,8 +322,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21C3710625DDA2830061A853 /* ButtonHelper.swift in Sources */,
 				21DF667125DBEC6E009B58D6 /* HistoryHelper.swift in Sources */,
 				21C5C9F025DBB0490024B764 /* ViewController.swift in Sources */,
+				21C370FE25DDA2290061A853 /* TextFieldClass.swift in Sources */,
 				21C5C9EC25DBB0490024B764 /* AppDelegate.swift in Sources */,
 				21C5CA3125DBB4EB0024B764 /* BLEManager.swift in Sources */,
 				21C5C9EE25DBB0490024B764 /* SceneDelegate.swift in Sources */,
